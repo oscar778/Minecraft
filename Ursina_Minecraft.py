@@ -172,7 +172,7 @@ except IOError:
 sky = Sky()
 hand = Hand()
 
-Cluck = Entity(model=chickenModel,scale=0.2,
+MrCluck = Entity(model=chickenModel,scale=0.2,
                 x=22,z=16,y=1.8,
                 texture='assets/chicken.png',
                 double_sided=True)
