@@ -15,6 +15,7 @@ brick_texture = 'assets/brick_block.png'
 dirt_texture  = 'assets/dirt_block.png'
 sky_texture   = 'assets/skybox.png'
 arm_texture   = 'assets/arm_texture.png'
+chickenModel = load_model('assets/chicken.obj')
 punch_sound   = Audio('assets/punch_sound',loop = False, autoplay = False)
 bg_sound = Audio('assets/bg.mp3', loop = True, autoplay = True)
 walking_sound = Audio("assets/walking.mp3", loop = True, autoplay = False)
@@ -170,5 +171,11 @@ except IOError:
 
 sky = Sky()
 hand = Hand()
+
+Cluck = Entity(model=chickenModel,scale=0.2,
+                x=22,z=16,y=1.8,
+                texture='assets/chicken.png',
+                double_sided=True)
+
 
 app.run()
